@@ -1,0 +1,30 @@
+class Solution:
+    def reverse(self, x: int) -> int:
+        y = abs(x)
+        rev=''
+        if x>=0 :
+                    x = str(x)
+                    for i in x:
+                        rev = i+rev
+
+                    rev = int(rev)
+                    x =int(x)
+                    if (rev>= (-2)**31 and rev<= ((2)**31)-1 ):
+                        return rev
+                    else:
+                        return 0
+                    
+                
+                
+            
+        else :
+                y = str(y)
+                for i in y:
+                    rev = i+rev
+        
+                out = '-'+rev
+                out = int(out)
+                if (out>= (-2)**31 and out<= ((2)**31)-1 ):
+                        return out
+                else:
+                        return 0
