@@ -1,0 +1,12 @@
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        pali =x
+        rev=''
+        if x >=0 :
+            x= str(x)
+            for i in x:
+                rev = i+rev
+            res = int(rev)
+            out = (res ==pali)
+            return(out)
+        
