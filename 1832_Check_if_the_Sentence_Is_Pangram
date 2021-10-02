@@ -1,0 +1,12 @@
+class Solution:
+    def checkIfPangram(self, sentence: str) -> bool:
+        count =0
+        set_sentence = set(sentence)
+        for char in set_sentence :
+            ascii_code = ord(char)
+            if (ascii_code>=97 and ascii_code<=122):
+                count+=1
+        if (count ==26): 
+            return(bool(count))
+        
+                  
