@@ -1,0 +1,13 @@
+class Solution:
+    def toLowerCase(self, s: str) -> str:
+        for char in s:
+            orde =ord(char)
+            if (orde>= 65 and orde<=90):
+                orde = orde + 32
+                replace_char = chr(orde)
+                s =s.replace(char,replace_char)
+                
+            else :
+                pass
+            
+        return s
