@@ -1,0 +1,31 @@
+class Solution:
+    def selfDividingNumbers(self, left: int, right: int) -> List[int]:
+        list =[]
+        global count
+        count=0
+        for i in range(left,right+1):
+            print(i)
+            z=i
+            i = str(i)
+            if(len(i)==1):
+                list.append(i)
+            elif(len(i)>1 and ((z%10)!=0)):
+                for num in i :
+                        num = int(num)
+                        print(num)
+                        if (num!=0):
+                            self_divide = (z%num)
+                            print(self_divide)
+                            if(self_divide==0):
+                                count= (count+1)
+                                print(f'count of {z} is {count}')
+                        else:
+                            pass
+                            
+                if(count==len(i)):
+                    list.append(i)
+                    count =0
+                else :
+                    count =0
+                
+        return list
