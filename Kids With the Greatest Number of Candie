@@ -1,0 +1,13 @@
+class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        res_list=[]
+        leng= len(candies)
+        for i in range(leng):
+            total_candies = candies[i]+extraCandies
+            if(total_candies>=max(candies)):
+                res_list.append(bool(1))
+                total_candies=0
+            else:
+                res_list.append(bool(0))
+                total_candies=0
+        return res_list
