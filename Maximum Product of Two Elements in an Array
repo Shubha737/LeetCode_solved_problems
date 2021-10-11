@@ -1,0 +1,10 @@
+class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        nums.sort(reverse=True)
+        num_1 = nums[0]-1
+        num_2 = nums[1]-1
+        print(num_1)
+        print(num_2)
+        product = num_1 * num_2
+        return product
+        
