@@ -1,0 +1,12 @@
+class Solution:
+    def diagonalSum(self, mat: List[List[int]]) -> int:
+        leng = len(mat)
+        rept = leng-1
+        print(rept)
+        sum =0
+        for i in range(leng):
+            for j in range(leng):
+                if (i==j or ((i+j) ==(rept))):
+                    num = mat[i][j]
+                    sum= sum+num
+        return sum
