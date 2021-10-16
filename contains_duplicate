@@ -1,0 +1,13 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nums.sort()
+        s= set(nums)
+        list_s= list(s)
+        list_s.sort()
+        print(list_s)
+        print(nums)
+        if(list_s==nums):
+            return(bool(3<2))
+        else:
+            return(bool(3>2))
+        
