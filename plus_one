@@ -1,0 +1,16 @@
+class Solution:
+    def plusOne(self, digits: List[int]) -> List[int]:
+        add= ''
+        for num in digits:
+            nums = str(num)
+            add = add+nums
+            print(type(add))
+        print(add)
+        add=int(add)
+        print(add)
+        
+        res = add+ 1
+        res= str(res)
+        result = list(res)
+            
+        return result
