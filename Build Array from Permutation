@@ -1,0 +1,11 @@
+class Solution:
+    def buildArray(self, nums: List[int]) -> List[int]:
+        print(nums)
+        ans=[]
+        leng=len(nums)
+        for i in range (leng):
+            x=nums[i]
+            y=nums[x]
+            ans.append(y)
+            
+        return ans
