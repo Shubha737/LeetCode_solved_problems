@@ -1,0 +1,19 @@
+class Solution(object):
+    def canConstruct(self, ransomNote, magazine):
+        """
+        :type ransomNote: str
+        :type magazine: str
+        :rtype: bool
+        """
+        s_ransomNote= set(list(ransomNote))
+        l_ransomNote= list(ransomNote)
+        if(len(ransomNote)>len(magazine)):
+            return (bool(0))
+        elif (len(ransomNote)<=len(magazine)):
+            for i in range(len(ransomNote)):
+                if (ransomNote.count(ransomNote[i]) <= magazine.count(ransomNote[i])):
+                    continue
+                else:
+                    return (bool(0))
+                    break
+            return(bool(1))
